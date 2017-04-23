@@ -12,6 +12,11 @@
 
 #include "particle_filter.h"
 
+// random generator engine
+// Better put it in the class declariation, but the submission
+// doesn't allow me to change particle_filter.h
+std::default_random_engine random_generator;
+
 void ParticleFilter::init(double x, double y, double theta, double std[]) {
 	// TODO: Set the number of particles. Initialize all particles to first position (based on estimates of 
 	//   x, y, theta and their uncertainties from GPS) and all weights to 1. 
